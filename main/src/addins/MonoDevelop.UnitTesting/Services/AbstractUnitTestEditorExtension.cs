@@ -43,7 +43,7 @@ namespace MonoDevelop.UnitTesting
 	public abstract class AbstractUnitTestTextEditorExtension : TextEditorExtension
 	{
 		const string TestMarkersPath = "/MonoDevelop/UnitTesting/UnitTestMarkers";
-		static IUnitTestMarkers [] unitTestMarkers;
+		static IUnitTestMarkers [] unitTestMarkers = Array.Empty<IUnitTestMarkers> ();
 
 		static AbstractUnitTestTextEditorExtension ()
 		{
